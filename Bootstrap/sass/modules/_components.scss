@@ -1,0 +1,27 @@
+//contains each self-contained component in its own .scss partial.//
+
+//Generally speaking, components are reusable, self-contained, independent units of a user interface. Components may be composed of other components, such as a search form (composed of a text input and a button), and they may have variants, such as a smaller or different color buttons.//
+
+@mixin button {
+  @include button-basic
+  width: 60%;
+  &:hover {
+    background-color: $brandColor;
+    a, h4 {
+      color: white;
+    }
+  }
+}
+
+
+@mixin button2 {
+  @include button-basic
+    width: 20%;
+
+  &:hover {
+    background-color: $brandColor;
+    a, h4 {
+      color: white;
+    }
+  }
+}
