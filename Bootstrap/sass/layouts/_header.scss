@@ -1,10 +1,14 @@
 //contains styling for larger layout components; e.g. nav, header, footer, etc.//
 header .text-center {
+	
 	@include breakpoint(mobile) {
+		
 		text-align: center;
 		padding-top: 4% 0;
 	}
+	
 	@include breakpoint(table) {
+		
 		padding-top: 4%;
 	}
 }

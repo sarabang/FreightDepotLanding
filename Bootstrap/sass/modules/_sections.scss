@@ -14,117 +14,127 @@
 		padding-top: 5%;
 	}
 }
-	.col-lg-4 {
-		@include breakpoint(mobile) {
-			padding-top: 10%;
-			padding-bottom: 100px;
-			padding-left: 4%;
-			background-color: $iconBg;
-			margin: 0 3% 8% 3%;
-		}
-		@include breakpoint(laptop) {
-			text-align: center;
+
+.col-lg-4 {
+	@include breakpoint(mobile) {
+		padding-top: 10%;
+		padding-bottom: 100px;
+		padding-left: 4%;
+		background-color: $iconBg;
+		margin: 0 3% 8% 3%;
+	}
+	@include breakpoint(laptop) {
+		text-align: center;
+	}
+}
+
+.grid-cell {
+	@include breakpoint(tablet) {
+		position: relative;
+		background-color: $iconBg;
+		overflow: hidden;
+		text-align: center;
+		min-height: 18em;
+		
+		img {
+			text-align:center;
 		}
 	}
-		.grid-cell {
-			@include breakpoint(tablet) {
-				position: relative;
-			  background-color: $iconBg;
-				overflow: hidden;
-			  text-align: center;
-				min-height: 18em;
+	@include breakpoint(laptop) {
+		min-height: 26em;
+	}
+}
 
-				img {
-					text-align:center;
-				}
-			}
-			@include breakpoint(laptop) {
-				min-height: 26em;
-			}
-		}
-		.topicon {
-			@include breakpoint(mobile) {
-				display: none;
-			}
-			@include breakpoint(tablet) {
-			}
-		}
-			.title {
-				@include breakpoint(mobile) {
-					padding-bottom:5%;
-				}
-				@include breakpoint(tablet) {
+.topicon {
+	@include breakpoint(mobile) {
+		display: none;
+	}
+	@include breakpoint(tablet) {
+	}
+}
 
-				}
-				@include breakpoint(laptop) {
-				}
-			}
-			.section1-1of3-description {
-				@include breakpoint(mobile) {
-					padding-bottom: 10%;
-				}
-				@include breakpoint(tablet) {
-					text-align: center;
-					padding: 15% 0 20% 0;
-				}
-				@include breakpoint(laptop) {
-					text-align: center;
-					padding: 15% 0 20% 0;
-				}
-			}
-			.section1-1of3-description-left {
-			@include breakpoint(mobile) {
-				padding-bottom: 10%;
-			}
-			@include breakpoint(tablet) {
-				text-align: center;
-				padding: 15% 0 34% 0;
-			}
-			@include breakpoint(laptop) {
-				padding: 15% 0 20% 0;
-			}
-		}
-			.section1-1of3-description-right {
-			@include breakpoint(mobile) {
-				padding-bottom: 10%;
-			}
-			@include breakpoint(tablet) {
-				text-align: center;
-				padding: 15% 0 15% 0;
-			}
-		}
-		.button {
-			@include button-basic
-			padding: 15px 32px;
-			@include breakpoint(mobile) {
-				position: absolute;
-				&:hover {
-				  border: 3px solid $brandColor;
-					background-color: $brandColor;
-					a {
-						text-decoration: none;
-						color: white;
-					}
-				}
-				&:visited {
-					color: $brandColor;
-				}
-			}
-			@include breakpoint(tablet) {
-				display: inline-block;
-				&:hover {
-					text-align: center;
-					background-color: $brandColor;
-					a {
-						text-decoration: none;
-						color: white;
-					}
-				}
-				&:visited {
-					color: $brandColor;
-				}
+.title {
+	@include breakpoint(mobile) {
+		padding-bottom:5%;
+	}
+	@include breakpoint(tablet) {
+		
+	}
+	@include breakpoint(laptop) {
+	}
+}
+
+.section1-1of3-description {
+	@include breakpoint(mobile) {
+		padding-bottom: 10%;
+	}
+	@include breakpoint(tablet) {
+		text-align: center;
+		padding: 15% 0 20% 0;
+	}
+	@include breakpoint(laptop) {
+		text-align: center;
+		padding: 15% 0 20% 0;
+	}
+}
+
+.section1-1of3-description-left {
+	@include breakpoint(mobile) {
+		padding-bottom: 10%;
+	}
+	@include breakpoint(tablet) {
+		text-align: center;
+		padding: 15% 0 34% 0;
+	}
+	@include breakpoint(laptop) {
+		padding: 15% 0 20% 0;
+	}
+}
+
+.section1-1of3-description-right {
+	@include breakpoint(mobile) {
+		padding-bottom: 10%;
+	}
+	@include breakpoint(tablet) {
+		text-align: center;
+		padding: 15% 0 15% 0;
+	}
+}
+
+.button {
+	@include button-basic
+	padding: 15px 32px;
+	@include breakpoint(mobile) {
+		position: absolute;
+		&:hover {
+			border: 3px solid $brandColor;
+			background-color: $brandColor;
+			a {
+				text-decoration: none;
+				color: white;
 			}
 		}
+		&:visited {
+			color: $brandColor;
+		}
+	}
+	
+	@include breakpoint(tablet) {
+		display: inline-block;
+		
+		&:hover {
+			text-align: center;
+			background-color: $brandColor;
+			a {
+				text-decoration: none;
+				color: white;
+			}
+		}
+		&:visited {
+			color: $brandColor;
+		}
+	}
+}
 .cc-payment-button-right {
 	@include breakpoint(tablet) {
 		margin-top: -45px;
@@ -135,164 +145,164 @@
 //quickfee financing//
 .left {
 	@include breakpoint(tablet) {
-			margin-top: 20%;
+		margin-top: 20%;
 	}
 	@include breakpoint(laptop) {
 		margin-top: 15%;
 	}
 }
-	.col-lg-6 {
+.col-lg-6 {
+	@include breakpoint(mobile) {
+		margin: 0 3% 8% 3%;
+	}
+	@include breakpoint(tablet) {
+		margin-top: -10%;
+	}
+}
+.home-box-quickfee {
+	@include breakpoint(mobile) {
+		margin: 20% 0 4% 0;
+		color: $brandOrange;
+	}
+	@include breakpoint(tablet) {
+		color: $brandOrange;
+	}
+	
+}
+.home-box-right {
+	@include breakpoint(mobile) {
+		position: relative;
+		height: auto;
+		margin: 0 auto;
+	}
+	@include breakpoint(tablet) {
+		display: none;
+	}
+	@include breakpoint(laptop) {
+		display: block;
+		padding-top: 3%;
+		width: 50%;
+		height: auto;
+	}
+}
+.home-box-right-tablet {
+	@include breakpoint(mobile) {
+		display: none;
+		position: relative;
+	}
+	@include breakpoint(tablet) {
+		padding-top: 10%;
+		width: 40%;
+		left: 10%;
+		height: auto;
+	}
+	@include breakpoint(laptop) {
+		display: none;
+	}
+}
+
+//quickfee helps //
+.right {
+	@include breakpoint(tablet) {
+		margin-top: 20%;
+	}
+	@include breakpoint(laptop) {
+		margin-top: 15%;
+	}
+}
+.rightside {
+	@include breakpoint(mobile) {
+		margin-top: 10%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+.home-box-left-icon {
+	@include breakpoint(mobile){
+		order:2;
+		width: 100%;
+		margin: 0 auto;
+	}
+	@include breakpoint(tablet) {
+		padding-top: 15%;
+		display: none;
+	}
+	@include breakpoint(laptop) {
+		padding-top: 4%;
+		display: block;
+	}
+}
+.home-box-left-icon-tablet {
+	@include breakpoint(mobile) {
+		display: none;
+	}
+	@include breakpoint(talet) {
+		padding-top: 10%;
+		width: 30%;
+		height: auto;
+		display: block;
+	}
+	@include breakpoint(laptop) {
+		display: none;
+	}
+}
+.home-box-right-helps {
+	@include breakpoint(mobile) {
+		order: 1;
+		color: $brandBlue;
+		h5 {
+			margin-bottom: 5%;
+		}
+	}
+}
+ul {
+	@include breakpoint(mobile) {
+		padding-left: 5%;
+	}
+	@include breakpoint(tablet) {
+		padding-left: 5%;
+	}
+	li {
 		@include breakpoint(mobile) {
-			margin: 0 3% 8% 3%;
+			list-style-type: disc;
 		}
 		@include breakpoint(tablet) {
-			margin-top: -10%;
+			list-style-type: disc;
 		}
 	}
-		.home-box-quickfee {
-			@include breakpoint(mobile) {
-				margin: 20% 0 4% 0;
-				color: $brandOrange;
-			}
-			@include breakpoint(tablet) {
-				color: $brandOrange;
-			}
-
-		}
-		.home-box-right {
-			@include breakpoint(mobile) {
-			position: relative;
-			height: auto;
-			margin: 0 auto;
-			}
-			@include breakpoint(tablet) {
-			display: none;
-			}
-			@include breakpoint(laptop) {
-				display: block;
-				padding-top: 3%;
-				width: 50%;
-				height: auto;
-			}
-		}
-		.home-box-right-tablet {
-			@include breakpoint(mobile) {
-				display: none;
-				position: relative;
-			}
-			@include breakpoint(tablet) {
-				padding-top: 10%;
-				width: 40%;
-				left: 10%;
-				height: auto;
-			}
-			@include breakpoint(laptop) {
-				display: none;
-			}
-		}
-
-	//quickfee helps //
-	.right {
-		@include breakpoint(tablet) {
-				margin-top: 20%;
-		}
-		@include breakpoint(laptop) {
-			margin-top: 15%;
-		}
-	}
-		.rightside {
-			@include breakpoint(mobile) {
-				margin-top: 10%;
-				display: flex;
-				flex-direction: column;
-			}
-		}
-			.home-box-left-icon {
-				@include breakpoint(mobile){
-					order:2;
-					width: 100%;
-					margin: 0 auto;
-				}
-				@include breakpoint(tablet) {
-					padding-top: 15%;
-					display: none;
-				}
-				@include breakpoint(laptop) {
-					padding-top: 4%;
-					display: block;
-				}
-			}
-			.home-box-left-icon-tablet {
-				@include breakpoint(mobile) {
-					display: none;
-				}
-				@include breakpoint(talet) {
-					padding-top: 10%;
-					width: 30%;
-					height: auto;
-					display: block;
-				}
-				@include breakpoint(laptop) {
-					 display: none;
-				}
-			}
-			.home-box-right-helps {
-				@include breakpoint(mobile) {
-					order: 1;
-					color: $brandBlue;
-					h5 {
-						margin-bottom: 5%;
-					}
-				}
-			}
-			ul {
-				@include breakpoint(mobile) {
-					padding-left: 5%;
-				}
-				@include breakpoint(tablet) {
-					padding-left: 5%;
-				}
-				li {
-					@include breakpoint(mobile) {
-						list-style-type: disc;
-					}
-					@include breakpoint(tablet) {
-						list-style-type: disc;
-					}
-				}
-			}
+}
 //questions //
 .col-lg-12 {
 	@include breakpoint(tablet) {
-			margin-top: 10%;
+		margin-top: 10%;
 	}
 	@include breakpoint(laptop) {
 		margin-top: 10%;
 	}
 }
 .button2 {
-		text-align: center;
-		@include breakpoint(mobile) {
-			padding-top: 15%;
-			padding-bottom: 25%;
-			a {
-				font-family: 'work sans', sans-serif;
-				color: $brandColor;
-				left: 10%;
-				border: 3px solid $brandColor;
-				@include listNoLine
-			}
-			&:hover {
-				color: white;
-			}
-
+	text-align: center;
+	@include breakpoint(mobile) {
+		padding-top: 15%;
+		padding-bottom: 25%;
+		a {
+			font-family: 'work sans', sans-serif;
+			color: $brandColor;
+			left: 10%;
+			border: 3px solid $brandColor;
+			@include listNoLine
 		}
-		@include breakpoint(tablet) {
-			padding-top: 6%;
-			padding-bottom: 5%;
-		}
-		a:hover {
+		&:hover {
 			color: white;
-			text-decoration: none;
 		}
+		
+	}
+	@include breakpoint(tablet) {
+		padding-top: 6%;
+		padding-bottom: 5%;
+	}
+	a:hover {
+		color: white;
+		text-decoration: none;
+	}
 }
